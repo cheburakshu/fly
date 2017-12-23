@@ -1,0 +1,8 @@
+2017-12-23 15:47:49,816: fly.ModelBootstrap: INFO    : MainThread : Created Model - input.
+2017-12-23 15:47:49,816: fly.ModelBootstrap: INFO    : MainThread : Created Model - add.
+2017-12-23 15:47:49,832: fly.ModelBootstrap: INFO    : MainThread : Created Model - print.
+2017-12-23 15:47:49,832: fly.ModelBootstrap: INFO    : MainThread : Created Model - subtract.
+2017-12-23 15:47:49,832: fly.ModelBootstrap: INFO    : MainThread : Created Model - ('input', 'connection').
+2017-12-23 15:47:49,832: fly.ModelBootstrap: INFO    : MainThread : Created Model - ('add', 'connection').
+2017-12-23 15:47:49,832: fly.ModelBootstrap: INFO    : MainThread : Created Model - ('subtract', 'connection').
+2017-12-23 15:47:49,832: fly.ModelBootstrap: INFO    : MainThread : All models created. Launching event loop.
