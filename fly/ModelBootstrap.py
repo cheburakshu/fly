@@ -68,7 +68,7 @@ class ModelBootstrap(object):
         q.put(task_result)
 
     async def producer(self,model,qOut,qErr,qOnSuccess,qOnFailure,qIn,resultQ,loop=None):
-        with ThreadPoolExecutor(max_workers=100) as executor:
+        with ThreadPoolExecutor(max_workers=10) as executor:
             modelType = model.getModelType()
             while True:
                 try:
@@ -83,7 +83,7 @@ class ModelBootstrap(object):
                     self.logger.error('%s in Model - %s, Program - %s.%s.%s',str(sys.exc_info()),str(model.getModelName()), model.getModuleName(),model.getClassName(),model.getMethodName())
 
     async def consumer(self,model,qOut,qErr,qOnSuccess,qOnFailure,qIn,resultQ,loop=None):
-        with ThreadPoolExecutor(max_workers=100) as executor:
+        with ThreadPoolExecutor(max_workers=10) as executor:
             modelType = model.getModelType()
             while True:
                 try:
