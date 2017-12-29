@@ -7,7 +7,7 @@ class QueueInit(object):
         self._id =  uuid.uuid1().int
         self._modelId = kwargs.get('modelId')
         self._type = 'QUEUE'
-        self._obj = asyncio.Queue()
+        self._obj = queue.Queue() #asyncio.Queue()
 
     def getId(self):
         return self._id
