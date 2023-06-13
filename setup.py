@@ -37,10 +37,4 @@ setup(
     author='Sudharsan R',
     packages=packages,
     package_dir={'fly': 'fly'},
-    #install_requires=[
-    #    'kafka-python',
-    #],
-    #extras_require={
-    #    ':python_version == "2.7" or python_version == "3.3"': ['enum34>=1.1.6, <2'],
-    #}
 )

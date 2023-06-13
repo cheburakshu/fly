@@ -1,0 +1,5 @@
+>>> target
+{'a.e': {'b': {'c': 'd'}}, 'c': ['d']}
+>>> glom.glom(target, glom.Assign(glom.Path('c', 0), glom.Spec(glom.Path('a.e', 'b', 'c'))))
+{'a.e': {'b': {'c': 'd'}}, 'c': ['d']}
+>>> 
